@@ -29,6 +29,12 @@ I specialize in  Front-End Development, UX/UI Design, AIML (currently Learning),
 ### Project And Certification Section
 ![project](https://github.com/prayu12345/codealpha_portfolio/blob/main/design/Screenshotproject.png)
 
+### Links
+
+- Solution URL: [@github](https://github.com/prayu12345/codealpha_portfolio)
+- Live Site URL: [@github pages](https://prayu12345.github.io/codealpha_portfolio/)
+
+
 ## 🛠️ Skills
 
 ### Programming Languages
