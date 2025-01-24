@@ -17,7 +17,8 @@ I specialize in  Front-End Development, UX/UI Design, AIML (currently Learning),
   Feel free to reach out to me if you'd like to collaborate, discuss potential projects, or just have a chat!
 
   ##Screenshot
-  ![Desktop Mode Light Theme](/design/Screenshot1.png")
+  ![Desktop Mode Light Theme](https://github.com/prayu12345/codealpha_portfolio/blob/main/design/Screenshot1.png)
+)
 ## 🛠️ Skills
 
 ### Programming Languages
