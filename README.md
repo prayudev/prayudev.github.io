@@ -19,6 +19,16 @@ I specialize in  Front-End Development, UX/UI Design, AIML (currently Learning),
 ## Screenshot <br>
 #### Desktop Mode Light Theme
 ![Desktop Mode Light Theme](https://github.com/prayu12345/codealpha_portfolio/blob/main/design/Screenshot1.png)
+#### Desktop Mode Dark Theme
+![Desktop Mode Light Theme](https://github.com/prayu12345/codealpha_portfolio/blob/main/design/Screenshotdark.png)
+### Phone View
+![Phone View](https://github.com/prayu12345/codealpha_portfolio/blob/main/design/Screenshotphone.png)
+### About Section
+![About ](https://github.com/prayu12345/codealpha_portfolio/blob/main/design/Screenshotabout.png)
+
+### Project And Certification Section
+![project](https://github.com/prayu12345/codealpha_portfolio/blob/main/design/Screenshotproject.png)
+
 ## 🛠️ Skills
 
 ### Programming Languages
