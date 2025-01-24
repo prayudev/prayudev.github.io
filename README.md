@@ -17,8 +17,7 @@ I specialize in  Front-End Development, UX/UI Design, AIML (currently Learning),
   Feel free to reach out to me if you'd like to collaborate, discuss potential projects, or just have a chat!
 
   ##Screenshot
-  ![mobile - default theme](
-
+  ![Desktop Mode Light Theme](./design/Screenshot 2025-01-24 194031.png")
 ## 🛠️ Skills
 
 ### Programming Languages
