@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Video Player</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url(images/vdo.avif);
+      color: #ffffff;
+      line-height: 1.6;
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      background-color: #2c3e50b2;
+      color: rgb(221, 255, 214);
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .video-section {
+      margin: 20px auto;
+      text-align: center;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    /* Video Player */
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .video-controls {
+      margin-top: 10px;
+    }
+
+    button, select, input[type="range"] {
+      padding: 10px;
+      font-size: 1rem;
+      margin: 0 10px;
+      cursor: pointer;
+      border: none;
+      background-color: #2c3e50;
+      color: white;
+      border-radius: 5px;
+    }
+
+    button:hover, select:hover, input[type="range"]:hover {
+      background-color: #34495e;
+    }
+
+    label {
+      font-size: 1.1rem;
+    }
+
+    .about-video {
+      background-color: #485c8845;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .about-video h2 {
+      font-size: 2rem;
+    }
+
+    footer {
+      background-color: #34495e;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .video-controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      button, select, input[type="range"] {
+        margin: 5px;
+        font-size: 0.9rem;
+      }
+
+      .about-video h2 {
+        font-size: 1.5rem;
+      }
+
+      .about-video p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      footer p {
+        font-size: 0.9rem;
+      }
+
+      .video-controls {
+        font-size: 0.9rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Engaging Video Overview</h1>
+  </header>
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <video id="myVideo" controls>
+      <source src="images/vd.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    <div class="video-controls">
+      <!-- Play/Pause Button -->
+      <button id="playPauseBtn">Play</button>
+      
+      <!-- Volume Control -->
+      <label for="volumeControl">Volume:</label>
+      <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
+      
+      <!-- Mute Button -->
+      <button id="muteBtn">Mute</button>
+      
+      <!-- Speed Control -->
+      <label for="speedControl">Speed:</label>
+      <select id="speedControl">
+        <option value="0.5">0.5x</option>
+        <option value="1" selected>1x</option>
+        <option value="1.5">1.5x</option>
+        <option value="2">2x</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-video">
+    <h2>About The Aarvi</h2>
+    <p>Aarvi AI is a smart voice recognition assistant that makes your tasks effortless. Like Google Assistant or Siri, it listens to your commands and responds intelligently, helping with reminders, controlling smart devices, and providing real-time information. Aarvi AI brings convenience and ease to your daily life.</p>
+    <P>"Feel free to explore and give it a try by clicking the link below!"</P>
+    <a href="https://devayush05.github.io/ArviAi/"><b>Click me</b></a>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 All Rights Reserved. Aarvi AI assistant</p>
+  </footer>
+
+  <script>
+    // Get the video element and control buttons
+    const video = document.getElementById('myVideo');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const volumeControl = document.getElementById('volumeControl');
+    const muteBtn = document.getElementById('muteBtn');
+    const speedControl = document.getElementById('speedControl');
+    const startVoiceBtn = document.getElementById('startVoiceBtn');
+    
+    // Set initial volume based on the slider position
+    volumeControl.value = video.volume;
+  
+    // Play/Pause functionality
+    playPauseBtn.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
+        playPauseBtn.textContent = 'Pause';
+      } else {
+        video.pause();
+        playPauseBtn.textContent = 'Play';
+      }
+    });
+  
+    // Volume control functionality
+    volumeControl.addEventListener('input', () => {
+      video.volume = volumeControl.value;
+    });
+  
+    // Mute/Unmute functionality
+    muteBtn.addEventListener('click', () => {
+      if (video.muted) {
+        video.muted = false;
+        muteBtn.textContent = 'Mute';
+      } else {
+        video.muted = true;
+        muteBtn.textContent = 'Unmute';
+      }
+    });
+  
+    // Speed control functionality
+    speedControl.addEventListener('change', () => {
+      video.playbackRate = parseFloat(speedControl.value);
+    });
+  
+    // Voice Recognition API for controlling video
+    const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+    recognition.lang = 'en-US';
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+  
+    startVoiceBtn.addEventListener('click', () => {
+      recognition.start();
+    });
+  
+    recognition.onresult = function(event) {
+      const command = event.results[0][0].transcript.toLowerCase();
+      console.log('Voice command:', command);
+  
+      if (command.includes('play')) {
+        video.play();
+        playPauseBtn.textContent = 'Pause';
+      } else if (command.includes('pause')) {
+        video.pause();
+        playPauseBtn.textContent = 'Play';
+      } else if (command.includes('mute')) {
+        video.muted = true;
+        muteBtn.textContent = 'Unmute';
+      } else if (command.includes('unmute')) {
+        video.muted = false;
+        muteBtn.textContent = 'Mute';
+      } else if (command.includes('volume')) {
+        const volume = parseFloat(command.split(' ')[1]);
+        if (!isNaN(volume)) {
+          video.volume = volume / 100;  // Expecting 0-100 range in voice command
+          volumeControl.value = video.volume * 100;  // Update the slider position
+        }
+      } else if (command.includes('speed')) {
+        const speed = parseFloat(command.split(' ')[1]);
+        if (![0.5, 1, 1.5, 2].includes(speed)) {
+          speedControl.value = 1; // Default to 1x speed
+        } else {
+          speedControl.value = speed;
+        }
+        video.playbackRate = speed;
+      }
+    };
+  
+    recognition.onerror = function(event) {
+      console.error('Speech recognition error:', event.error);
+    };
+  </script>
+  
+</body>
+</html>
