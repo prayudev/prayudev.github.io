@@ -47,7 +47,7 @@
                 I'm a full stack developer who loves to create beautiful and functional websites
                 for people who want to make a difference in the world.
             </p>
-            <p>Currently I'm a student of <a href="https://www.galgotiasuniversity.edu.in/" target="_blank"><b>Galgotias University</b></a>, where I'm persuing my bachelor's degree in Software Engineering.</p>
+            <p>Currently I'm a student of <a href="https://www.galgotiasuniversity.edu.in/" target="_blank"><b>Galgotias University</b></a>, where I'm pursuing my bachelor's degree in Software Engineering.</p>
 
             <div class="social-media">
                 <a href="https://www.facebook.com/share/1PF64ktQ88/" target="_blank"><i class='bx bxl-facebook'></i></a>
@@ -55,7 +55,7 @@
                 <a href="https://github.com/prayu12345" target="_blank"><i class='bx bxl-github'></i></a>
             </div>
 
-            <a href="https://www.linkedin.com/in/ravi-raj2505/" target="_blank" class="btn">View LinkedIn</a>
+            <a href="https://www.linkedin.com/in/harsh-chaudhary-15763a150/" target="_blank" class="btn">View LinkedIn</a>
         </div>
 
         <div class="profession-container">
@@ -72,7 +72,6 @@
                     <i class='bx bx-code'></i>
                     <h3>AI Engineering</h3>
                 </div>
-
 
                 <div class="circle"></div>
             </div>
@@ -141,7 +140,6 @@
         <h2 class="heading">My <span>Certficate</span></h2>
 
         <div class="portfolio-container">
-            
             <div class="portfolio-box">
                 <img src="images/python.jpg" alt="">
 
@@ -180,12 +178,11 @@
 
         <div class="testimonial-wrapper">
             <div class="testimonial-box mySwiper">
-                <div class="testimonial-content swiper-wrapper" >
+                <div class="testimonial-content swiper-wrapper">
                     <div class="testimonial-slide swiper-slide" id="color">
                         <img src="images/aarvi.png" alt="">
                         <h3>Arvi Ai</h3>
                         <p>Aarvi AI is a cutting-edge voice recognition assistant designed to make your everyday tasks more effortless and efficient. Just like virtual assistants such as Google Assistant and Siri, Aarvi AI listens to your voice commands and provides intelligent, real-time responses. Whether you need to set reminders, control smart devices, or get instant information, Aarvi AI simplifies your life with hands-free convenience. With Aarvi AI, you can easily manage tasks, stay organized, and enjoy a seamless, voice-powered experience.
-
                         </p>
                     </div>
                     
@@ -209,18 +206,23 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form action="https://formspree.io/f/mjkgrgzz" method="POST" id="contact-form">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" name="phone" placeholder="Mobile Number" required>
+                <input type="text" name="subject" placeholder="Email Subject" required>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
+
+        <!-- Success message (hidden by default) -->
+        <div id="success-message" style="display:none;">
+            <p>Your message has been sent successfully! We'll get back to you soon.</p>
+        </div>
     </section>
 
     <div class="about_me">
@@ -237,7 +239,7 @@
 
     <!-- footer design -->
     <footer class="footer">
-        <div class="footer-text" >
+        <div class="footer-text">
             <p>Copyright &copy; 2024 | All Rights Reserved. </p>
         </div>
 
@@ -247,7 +249,7 @@
     </footer>
 
 
-    <!-- scroll reveal -->
+    <!-- scroll reveal --
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- swiper js -->
@@ -255,6 +257,7 @@
 
     <!-- custom js -->
     <script src="sctipt.js"></script>
+
 </body>
 
 </html>
