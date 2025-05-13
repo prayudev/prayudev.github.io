@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://prayudev.github.io/
+Sitemap: https://prayudev.github.io/sitemap.xml
+
