@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Ravi Raj | Cybersecurity Portfolio</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background:
+                linear-gradient(rgba(79, 70, 229, 0.08) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(14, 165, 233, 0.06) 1px, transparent 1px),
+                radial-gradient(circle at top left, rgba(79, 70, 229, 0.22), transparent 30%),
+                radial-gradient(circle at bottom right, rgba(14, 165, 233, 0.16), transparent 32%),
+                #070b16;
+            background-size: 70px 70px, 70px 70px, auto, auto, auto;
+            color: #d7deea;
+        }
+
+        header {
+            padding: 25px 8%;
+            text-align: center;
+            background: rgba(13, 19, 36, 0.9);
+            border-bottom: 1px solid rgba(14, 165, 233, 0.25);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #38bdf8;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 1rem;
+            color: #b8c4d8;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1050px;
+            margin: 40px auto;
+        }
+
+        section {
+            background: rgba(13, 19, 36, 0.9);
+            border: 1px solid rgba(79, 70, 229, 0.28);
+            border-radius: 18px;
+            padding: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, .48);
+            backdrop-filter: blur(14px);
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: #f8fafc;
+            margin-bottom: 12px;
+            font-size: 1.25rem;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 14px;
+            color: #d7deea;
+            font-size: 1rem;
+        }
+
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            color: #818cf8;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+            list-style: none;
+        }
+
+        .skills-grid li {
+            background: rgba(56, 189, 248, 0.08);
+            border: 1px solid rgba(56, 189, 248, 0.22);
+            padding: 13px 15px;
+            border-radius: 12px;
+            color: #e2e8f0;
+        }
+
+        .project-list {
+            display: grid;
+            gap: 16px;
+        }
+
+        .project-card {
+            background: rgba(6, 7, 18, 0.55);
+            border: 1px solid rgba(124, 58, 237, 0.28);
+            padding: 18px;
+            border-radius: 14px;
+        }
+
+        .contact-info {
+            display: grid;
+            gap: 12px;
+        }
+
+        .contact-info a {
+            display: block;
+            padding: 13px 16px;
+            background: rgba(56, 189, 248, 0.08);
+            border: 1px solid rgba(56, 189, 248, 0.22);
+            border-radius: 12px;
+            color: #f8fafc;
+        }
+
+        .btn-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #4f46e5, #0ea5e9);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .btn:hover {
+            background: transparent;
+            border-color: #38bdf8;
+            color: #38bdf8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 22px;
+            background: rgba(13, 19, 36, 0.9);
+            border-top: 1px solid rgba(14, 165, 233, 0.25);
+            color: #b8c4d8;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            section {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>About Me</h1>
+        <p>Cybersecurity Learner | Bug Bounty Enthusiast | Secure Web Developer</p>
+    </header>
+
+    <main>
+        <section class="bio">
+            <h2>Hello, I'm Ravi Raj!</h2>
+
+            <p>
+                I am a Computer Science Engineering student at
+                <a href="https://www.galgotiasuniversity.edu.in/" target="_blank">Galgotias University</a>,
+                with a strong interest in cybersecurity, ethical hacking, web application security,
+                and secure web development.
+            </p>
+
+            <p>
+                My current learning focus includes web security testing, OWASP Top 10 vulnerabilities,
+                Burp Suite, Linux basics, Nmap, network security fundamentals, SOC concepts,
+                and bug bounty methodology. I believe in learning by doing, so I regularly practice
+                through hands-on labs and real-world inspired security projects.
+            </p>
+
+            <p>
+                I have solved multiple labs on platforms like PortSwigger Web Security Academy
+                and I am also building my practical cybersecurity profile through TryHackMe,
+                writeups, security notes, and project-based learning.
+            </p>
+
+            <p>
+                Along with cybersecurity, I also work on web development using HTML, CSS,
+                JavaScript, React, and backend basics. My goal is to combine development and
+                security skills so I can build applications that are not only attractive and useful,
+                but also more secure.
+            </p>
+
+            <div class="btn-row">
+                <a href="index.html" class="btn">Back to Portfolio</a>
+                <a href="ResumeRaviRaj.pdf" download class="btn">Download Resume</a>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Technical Skills</h2>
+
+            <ul class="skills-grid">
+                <li>Cybersecurity Fundamentals</li>
+                <li>Web Application Security</li>
+                <li>Bug Bounty Methodology</li>
+                <li>Burp Suite</li>
+                <li>PortSwigger Labs</li>
+                <li>TryHackMe Practice</li>
+                <li>Nmap & Recon Basics</li>
+                <li>Linux Basics</li>
+                <li>OWASP Top 10</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React Basics</li>
+                <li>Python & Java Basics</li>
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2>Projects & Learning Focus</h2>
+
+            <div class="project-list">
+                <div class="project-card">
+                    <h3>Malware Detection Lab</h3>
+                    <p>
+                        A defensive cybersecurity project focused on file scanning,
+                        hash checking, suspicious pattern detection, and readable threat reports.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Knowmads Study Planner</h3>
+                    <p>
+                        A smart study planner web app with login, dashboard, subjects,
+                        notes, progress tracking, and clean UI design.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Cybersecurity Portfolio</h3>
+                    <p>
+                        A personal portfolio website designed with a professional dark hacker-style UI,
+                        including certificates, badges, articles, projects, and contact section.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Me</h2>
+
+            <div class="contact-info">
+                <a href="mailto:ayushweb.help@gmail.com">Email: ayushbabu9973@gmail.com</a>
+                <a href="https://www.linkedin.com/in/ravi-raj2505" target="_blank">LinkedIn: Ravi Raj</a>
+                <a href="https://github.com/prayudev" target="_blank">GitHub: prayudev</a>
+                <a href="index.html#contact">Send Message Through Portfolio</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ravi Raj | Designed with Security Mindset</p>
+    </footer>
+
+</body>
+</html>

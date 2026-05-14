@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /design/
+
+Sitemap: https://prayudev.github.io/sitemap.xml
