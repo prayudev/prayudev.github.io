@@ -1154,3 +1154,119 @@ img {
         font-size: 4.5rem;
     }
 }
+
+/* ==========================
+   CYBER VIDEO SECTION
+========================== */
+
+.cyber-videos {
+  padding: 10rem 9% 5rem;
+}
+
+.cyber-video-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cyber-video-container {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.cyber-video-container::-webkit-scrollbar {
+  display: none;
+}
+
+.cyber-video-card {
+  position: relative;
+  min-width: 280px;
+  width: 280px;
+  height: 500px; /* Reel Style */
+  border-radius: 2rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: .2rem solid var(--main-color);
+}
+
+.cyber-video-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cyber-video-layer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.1),
+    rgba(0,0,0,0.95)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  transform: translateY(100%);
+  transition: .5s ease;
+}
+
+.cyber-video-card:hover .cyber-video-layer {
+  transform: translateY(0);
+}
+
+.cyber-video-layer h4 {
+  font-size: 2rem;
+}
+
+.cyber-video-layer p {
+  font-size: 1.4rem;
+  margin: .8rem 0 1.5rem;
+}
+
+.cyber-video-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: var(--text-color);
+  border-radius: 50%;
+}
+
+.cyber-video-layer a i {
+  font-size: 2rem;
+  color: var(--second-bg-color);
+}
+
+.video-nav-btn {
+  position: absolute;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(255,255,255,.1);
+  backdrop-filter: blur(10px);
+  color: var(--text-color);
+  font-size: 2.5rem;
+}
+
+.video-prev {
+  left: -25px;
+}
+
+.video-next {
+  right: -25px;
+}
+
+.video-nav-btn:hover {
+  background: var(--main-color);
+}
