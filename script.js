@@ -82,6 +82,24 @@ ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .test
 ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
 
+const videoContainer = document.querySelector(".cyber-video-container");
+const nextBtn = document.querySelector(".video-next");
+const prevBtn = document.querySelector(".video-prev");
+
+nextBtn.addEventListener("click", () => {
+  videoContainer.scrollBy({
+    left: 900,
+    behavior: "smooth"
+  });
+});
+
+prevBtn.addEventListener("click", () => {
+  videoContainer.scrollBy({
+    left: -900,
+    behavior: "smooth"
+  });
+});
+
 /*========== form submission handling ==========*/
 const form = document.getElementById('contact-form');
 form.addEventListener('submit', (e) => {
