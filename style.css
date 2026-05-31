@@ -1171,12 +1171,12 @@ img {
 
 .cyber-video-container {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   overflow-x: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
   width: 100%;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
 }
 
 .cyber-video-container::-webkit-scrollbar {
@@ -1185,10 +1185,10 @@ img {
 
 .cyber-video-card {
   position: relative;
-  min-width: 280px;
-  width: 280px;
-  height: 500px; /* Reel Style */
-  border-radius: 2rem;
+  min-width: 200px;
+  width: 200px;
+  height: 355px;
+  border-radius: 1.5rem;
   overflow: hidden;
   flex-shrink: 0;
   border: .2rem solid var(--main-color);
@@ -1260,11 +1260,11 @@ img {
 }
 
 .video-prev {
-  left: -25px;
+  left: 0;
 }
 
 .video-next {
-  right: -25px;
+  right: 0;
 }
 
 .video-nav-btn:hover {
